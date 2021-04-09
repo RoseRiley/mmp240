@@ -1,3 +1,9 @@
+<head>font-family: 'Bebas Neue', cursive;</head>
+#wrapper{
+  max-width:1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .col-left{
   float: left;
@@ -15,9 +21,17 @@ footer{
 
 }
 nav{
-  background:grey;
+  background:pink;
+  height: 5em;
 
 }
+
+nav li{
+display: inline
+  }
+
+nav a:
+
 
 .banner{
   height: 15em;
