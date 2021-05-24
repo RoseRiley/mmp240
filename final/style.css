@@ -4,13 +4,38 @@
   padding-right:10px;
 }
 
+#wrapper > h2 {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 1em 0;
+}
+
 #page-header{
   align-items: center;
   display: flex;
   justify-content:space-between;
   margin-top:2em;
   margin-bottom:2em;
+  position: relative;
 }
+
+#page-header #menu {
+  background-color: white;
+  padding: 0.5em 1em;
+  display: none;
+  position: absolute;
+  right: 0.25em;
+  bottom: -2em;
+  border:1px solid #aaa;
+  border-radius: 4px;
+}
+
+#page-header .top-nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
 #page-header h1{
   font-weight: bold;
   font-size: 20px;
@@ -155,10 +180,16 @@
   margin-bottom: .5em;
   display: block;
 }
+
 .program-list .program h2{
   font-weight: bold;
   margin-bottom: .5em;
   font-size: 16px;
+}
+
+.program-list .program h2 a {
+  text-decoration: none;
+  color: black;
 }
 .program-list .program .degree{
   font-weight: bold;
@@ -208,12 +239,12 @@ footer{
 }
 
 @media (max-width:768px) {
-  #page-header ul{
+  #page-header #full-menu {
     display: none;
   }
 
   #page-header .menu-button{
-    display: block;
+    display: inline-block;
   }
 
   .search-programs{
